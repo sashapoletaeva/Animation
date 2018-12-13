@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      h1 {
+        font-size: 122px;
+        text-align: center;
+        padding-top: 30vh;
+        animation: glitchWithColor 2.5s linear infinite;
+      }
+
+      @keyframes glitchWithColor {
+         0% {
+           opacity: 1;
+         }
+         40.9% {
+           opacity: 1;
+         }
+
+         41.1% {
+           color: blue;
+           opacity: 0;
+         }
+
+         43% {
+           color: black;
+           opacity: 1;
+         }
+
+         100% {
+           opacity: 1;
+         }
+      }
+
+      body {
+        background: linear-gradient(270deg, #99f2db, #246ee1);
+        background-size: 400% 400%;
+        animation: AnimationName 3s ease infinite;
+      }
+
+
+     @keyframes AnimationName {
+         0%{background-position:26% 0%}
+         50%{background-position:75% 100%}
+         100%{background-position:26% 0%}
+     }
+
+    .froggy {
+      background-image: url("froggy.jpg");
+      padding-top: 10vh;
+      width: 100px;
+      margin: 40px auto;
+      -webkit-clip-path: circle(50% at 43% 54%);
+      clip-path: circle(50% at 43% 54%);
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="Niki">
+      <h1>Letters and people!</h1>
+      <div class="froggy"></div>
+    </div>
+  </body>
+</html>

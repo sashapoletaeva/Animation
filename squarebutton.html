@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animate transform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <style>
+       body {
+         margin: 0;
+         padding: 0;
+       }
+       .box {
+         width: 400px;
+         height: 400px;
+         margin-top: calc(50vh - 200px);
+         background-color: red;
+         transition: all 5% ease;
+       }
+
+      .box-animated {
+        width: 200px;
+        height: 200px;
+        transform: translateX(calc(100vw - 200px));
+      }
+
+
+    </style>
+  </head>
+  <body>
+   <div class="box" id="box-id"></div>
+   <a href="#" onclick="makeMove()">Развлекаюсь во время учебы</a>
+   <script type="text/javascript">
+     function makeMove() {
+       document.getElementById('box-id').classList.toggle('box-animated');
+     }
+   </script>
+  </body>
+</html>
